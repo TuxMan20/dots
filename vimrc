@@ -1,6 +1,11 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" Basic setups
+set ttyfast
+set encoding=utf-8
+set modelines=0
+
 " Required for Vundle
 filetype off
 
@@ -25,20 +30,13 @@ Plugin 'altercation/vim-colors-solarized' " A color scheme
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Enable syntax highlighting by default
+" Enable syntax and search highlighting by default
 syntax enable
+set hlsearch
 
-" Show line numbers
+" Show line numbers and relative position
 set number
-
-" Rendering
-set ttyfast
-
-" Encoding
-set encoding=utf-8
-
-" Security
-set modelines=0
+set relativenumber
 
 " Show file stats
 set ruler
