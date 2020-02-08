@@ -23,7 +23,7 @@ Plugin 'preservim/nerdtree'         " Directory viewer and manager
 Plugin 'tpope/vim-surround'         " Tool to surround text
 Plugin 'vim-airline/vim-airline'    " Status bar at the bottom of the screen
 Plugin 'ctrlpvim/ctrlp.vim'         " Fuzzy file finder/manager
-Plugin 'altercation/vim-colors-solarized' " A color scheme
+Plugin 'dense-analysis/ale'         " Linter system
 
 
 " All of your Plugins must be added before the following line
