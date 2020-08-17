@@ -24,6 +24,7 @@ Plugin 'tpope/vim-surround'         " Tool to surround text
 Plugin 'vim-airline/vim-airline'    " Status bar at the bottom of the screen
 Plugin 'ctrlpvim/ctrlp.vim'         " Fuzzy file finder/manager
 Plugin 'dense-analysis/ale'         " Linter system
+Plugin 'tomasiser/vim-code-dark'    " VSCode color theme
 
 
 " All of your Plugins must be added before the following line
@@ -53,3 +54,7 @@ nnoremap ; :
 " Highlights lines that go past 80 columns
 highlight ColorColumn ctermbg=blue
 call matchadd('ColorColumn', '\%81v', 100)
+
+" Enables the color scheme
+colorscheme codedark
+let g:airline_theme = 'codedark'
