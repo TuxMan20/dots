@@ -39,8 +39,10 @@ set hlsearch
 set number
 set relativenumber
 
-" Show file stats
+" stats and visual settings
 set ruler
+set colorcolumn=80
+set splitbelow
 
 " Blink cursor on error instead of beeping
 set visualbell
@@ -50,10 +52,6 @@ nnoremap - $
 
 " Remap ; to act as : (Avoid using the Shift key)
 nnoremap ; :
-
-" Highlights lines that go past 80 columns
-highlight ColorColumn ctermbg=blue
-call matchadd('ColorColumn', '\%81v', 100)
 
 " Enables the color scheme
 colorscheme codedark
