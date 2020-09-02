@@ -32,7 +32,7 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-# Installing Vundle
-echo "Installing Vundle..."
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-echo "Vundle is installed!"
+# Installing Vim-Plug
+echo "Installing Vim-Plug..."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "Vim-Plug is installed!"
