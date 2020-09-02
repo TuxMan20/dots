@@ -37,11 +37,10 @@ set splitbelow
 " Blink cursor on error instead of beeping
 set visualbell
 
-" Remap - to go the end of the line
-nnoremap - $
-
-" Remap ; to act as : (Avoid using the Shift key)
+" Remaps and key bindings 
+noremap - $
 nnoremap ; :
+map <C-n> :NERDTreeToggle<CR>
 
 " Enables the color scheme
 colorscheme codedark
