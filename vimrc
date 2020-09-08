@@ -16,7 +16,6 @@ Plug 'vim-airline/vim-airline'    " Status bar at the bottom of the screen
 Plug 'ctrlpvim/ctrlp.vim'         " Fuzzy file finder/manager
 Plug 'dense-analysis/ale'         " Linter system
 Plug 'tomasiser/vim-code-dark'    " VSCode color theme
-
 call plug#end()
 
 filetype plugin indent on    " required
@@ -33,6 +32,17 @@ set relativenumber
 set ruler
 set colorcolumn=80
 set splitbelow
+
+" Spacing and alignment settings
+set scrolloff=5
+set autoindent
+set cindent
+set wrap
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " Blink cursor on error instead of beeping
 set visualbell
