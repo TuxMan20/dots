@@ -47,10 +47,12 @@ set expandtab
 " Blink cursor on error instead of beeping
 set visualbell
 
-" Remaps and key bindings 
+" Remaps and key bindings
 noremap - $
 nnoremap ; :
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-j> <PageDown>
+nnoremap <C-k> <PageUp>
 
 " Enables the color scheme
 colorscheme codedark
