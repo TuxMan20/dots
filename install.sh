@@ -9,7 +9,7 @@
 
 dir=~/dots                    # dotfiles directory
 olddir=~/old_dots             # old dotfiles backup directory
-files="vimrc"    # list of files/folders to symlink in homedir
+files="vimrc zshrc tmux.conf"    # list of files/folders to symlink in homedir
 # vim zshrc oh-my-zsh
 
 ##########
@@ -36,3 +36,10 @@ done
 echo "Installing Vim-Plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "Vim-Plug is installed!"
+
+# Installing Zsh Plugins
+echo "Installing Zsh plugins... "
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+echo "Zsh plugins installed!"
+

@@ -53,6 +53,7 @@ nnoremap ; :
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <C-j> <PageDown>
 nnoremap <C-k> <PageUp>
+nnoremap ç ~
 
 " Enables the color scheme
 colorscheme codedark
