@@ -10,11 +10,9 @@ set modelines=0
 call plug#begin('~/.vim/plugged')
 
 " LIST OF PLUGINS
-Plug 'preservim/nerdtree'         " Directory viewer and manager
 Plug 'tpope/vim-surround'         " Tool to surround text
+Plug 'tpope/vim-fugitive'         " Git integration
 Plug 'vim-airline/vim-airline'    " Status bar at the bottom of the screen
-Plug 'ctrlpvim/ctrlp.vim'         " Fuzzy file finder/manager
-Plug 'dense-analysis/ale'         " Linter system
 Plug 'tomasiser/vim-code-dark'    " VSCode color theme
 call plug#end()
 
