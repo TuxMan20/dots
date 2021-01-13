@@ -56,4 +56,6 @@ nnoremap ç ~
 " Enables the color scheme
 colorscheme codedark
 let g:airline_theme = 'codedark'
-
+" Uses the Terminal background color/transparency
+set termguicolors
+hi Normal guibg=none
