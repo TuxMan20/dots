@@ -1,17 +1,15 @@
-" Don't try to be vi compatible
-set nocompatible
 
 " Basic setups
 set ttyfast
 set encoding=utf-8
 set modelines=0
 
-
 call plug#begin('~/.vim/plugged')
 
 " LIST OF PLUGINS
 Plug 'tpope/vim-surround'         " Tool to surround text
 Plug 'tpope/vim-fugitive'         " Git integration
+Plug 'tpope/vim-dispatch'         " Make and parse errors
 Plug 'vim-airline/vim-airline'    " Status bar at the bottom of the screen
 Plug 'tomasiser/vim-code-dark'    " VSCode color theme
 call plug#end()
@@ -45,16 +43,17 @@ set expandtab
 " Blink cursor on error instead of beeping
 set visualbell
 
+let mapleader = " "
+
 " Remaps and key bindings
 noremap - $
 nnoremap ; :
-map <C-n> :NERDTreeToggle<CR>
 nnoremap <C-j> <PageDown>
 nnoremap <C-k> <PageUp>
 nnoremap ç ~
 
 " Enables the color scheme
-colorscheme codedark
+colorscheme codedark 
 let g:airline_theme = 'codedark'
 
 " Custom autocomplete
